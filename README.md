@@ -17,7 +17,8 @@
   ![Neo4j](https://img.shields.io/badge/Neo4j-5.x-brightgreen)
   ![GDS](https://img.shields.io/badge/Neo4j-GDS-orange)
   ![APOC](https://img.shields.io/badge/Neo4j-APOC-blueviolet)
-  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17939763.svg)](https://doi.org/10.5281/zenodo.17939763)
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19368266.svg)](https://doi.org/10.5281/zenodo.19368266)
+
 
 </div>
 
