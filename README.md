@@ -44,11 +44,17 @@ Provlepsis4j executes each Cypher query on the current graph state and on the se
 
 ### Two views
 
-- **Administrator view**: configure Neo4j, load datasets, split train/validation/test, choose the storage representation, run embedding and prediction configurations, report evaluation metrics, and compare prediction sets across configurations.
+- **Administrator view**: configure Neo4j, load datasets, split train/validation/test, choose the storage representation, run embedding and prediction configurations, report evaluation metrics, compare prediction sets across configurations, and inspect probability distributions over future timesteps.
 - **User view**: write a Cypher query once and see answers on the current graph and the selected predicted future timeline side by side (table + interactive visualization). Predicted edges are annotated by prediction round/timestep, and hovering over them shows their probability and timestamp. The user can also select a query horizon to control how many predicted timesteps are visible.
 
 <p align="center">
   <img src="assets/admin_view.png" alt="Administrator view (metrics + overlaps)" width="700" />
+</p>
+
+The administrator view also includes a **Plots** subview for inspecting prediction behavior after a prediction run. It summarizes the selected embedding families, the number of predicted edges, their prediction-timestamp range, and the mean and maximum prediction probabilities. The violin plots show how the prediction probabilities are distributed at each future timestep, so the administrator can inspect how prediction confidence changes across rounds.
+
+<p align="center">
+  <img src="assets/plots_subview.png" alt="Administrator plots view" width="700" />
 </p>
 
 ---
