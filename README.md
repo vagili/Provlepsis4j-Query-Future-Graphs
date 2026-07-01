@@ -62,7 +62,7 @@ The administrator view also includes a **Plots** subview for inspecting predicti
 ## System overview
 
 <p align="center">
-  <img src="assets/architecture.png" alt="Provlepsis4j architecture" width="700" />
+  <img src="assets/architecture.pdf" alt="Provlepsis4j architecture" width="700" />
 </p>
 
 At a high level:
