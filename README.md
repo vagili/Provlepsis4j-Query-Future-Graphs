@@ -264,7 +264,7 @@ LIMIT 25
 │   │   ├── lp_iter.py
 │   │   ├── tgn_direct.py
 │   │   └── query.py
-│   └── tgn/                               # bundled TGN implementation
+│   └── tgn/                               # TGN implementation
 └── requirements.txt                       # Python dependencies
 ```
 
