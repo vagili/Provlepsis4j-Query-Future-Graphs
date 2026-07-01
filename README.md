@@ -207,7 +207,7 @@ Paste these in the **User** view to compare answers on the current graph and the
 ### Neighborhood expansion
 
 ```cypher
-MATCH (u:Entity {id: "1"})-[r]-(v:Entity)
+MATCH (u:Entity {id: 1})-[r]-(v:Entity)
 RETURN u, r, v
 LIMIT 50
 ```
@@ -215,7 +215,7 @@ LIMIT 50
 ### Shortest path (often changes with predicted edges)
 
 ```cypher
-MATCH (s:Entity {id: "1"}), (t:Entity {id: "10"})
+MATCH (s:Entity {id: 1}), (t:Entity {id: 10})
 MATCH p = shortestPath((s)-[*..10]-(t))
 RETURN p
 ```
@@ -223,7 +223,7 @@ RETURN p
 ### Common neighbors
 
 ```cypher
-MATCH (a:Entity {id: "1"})--(x:Entity)--(b:Entity {id: "10"})
+MATCH (a:Entity {id: 1})--(x:Entity)--(b:Entity {id: 10})
 RETURN x, count(*) AS c
 ORDER BY c DESC
 LIMIT 25
